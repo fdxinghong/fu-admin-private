@@ -13,6 +13,8 @@
           </a-button>
         </Space>
       </template>
+
+
       <template #toolbar>
         <a-button type="primary" @click="expandAll">{{ t('common.expandText') }}</a-button>
         <a-button type="primary" @click="collapseAll">{{ t('common.collapseText') }}</a-button>
@@ -51,10 +53,14 @@
               },
             ]"
           />
-        </template>
+      </template>
+
+
       </template>
     </BasicTable>
+
     <MenuDrawer @register="registerDrawer" @success="handleSuccess" />
+    
     <AddMenuButton @register="registerAddButtonDrawer" @success="handleSuccess" />
   </div>
 </template>

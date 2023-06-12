@@ -1,8 +1,12 @@
 <template>
   <ConfigProvider :locale="getAntdLocale">
+    <!-- 包装一个HTML标准模版，估计含有header和body -->
     <AppProvider>
+      <!-- 执行展示页面 -->
       <RouterView />
+      <!-- 路由规则 -->
     </AppProvider>
+  
   </ConfigProvider>
 </template>
 
